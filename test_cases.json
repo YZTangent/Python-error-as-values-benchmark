@@ -1,0 +1,9192 @@
+[
+  {
+    "id": 81,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_81",
+      "data": "message content 81"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 78,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_78",
+      "data": "message content 78"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 717,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_717",
+      "data": "message content 717"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 98,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_98",
+      "data": "message content 98"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 488,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_488",
+      "data": "message content 488"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 486,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_486",
+      "data": "message content 486"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 978,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 60,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_60",
+      "data": "message content 60"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 861,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 372,
+    "message": {
+      "user": "user_372",
+      "data": "message content 372"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 643,
+    "message": {
+      "timestamp": null,
+      "user": "user_643",
+      "data": "message content 643"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 242,
+    "message": {
+      "user": "user_242",
+      "data": "message content 242"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 932,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 497,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_497",
+      "data": "message content 497"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 30,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_30",
+      "data": "message content 30"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 194,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_194",
+      "data": "message content 194"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 777,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_777",
+      "data": "message content 777"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 544,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_544",
+      "data": "message content 544"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 459,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_459",
+      "data": "message content 459"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 508,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_508",
+      "data": "message content 508"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 468,
+    "message": {
+      "timestamp": "",
+      "user": "user_468",
+      "data": "message content 468"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 455,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_455",
+      "data": "message content 455"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 726,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_726",
+      "data": "message content 726"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 819,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 43,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_43",
+      "data": "message content 43"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 267,
+    "message": {
+      "user": "user_267",
+      "data": "message content 267"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 541,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_541",
+      "data": "message content 541"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 3,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_3",
+      "data": "message content 3"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 51,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_51",
+      "data": "message content 51"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 114,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_114",
+      "data": "message content 114"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 477,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_477",
+      "data": "message content 477"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 393,
+    "message": {
+      "user": "user_393",
+      "data": "message content 393"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 434,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_434",
+      "data": "message content 434"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 990,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 716,
+    "message": {
+      "timestamp": false,
+      "user": "user_716",
+      "data": "message content 716"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 126,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_126",
+      "data": "message content 126"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 729,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_729",
+      "data": "message content 729"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 178,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_178",
+      "data": "message content 178"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 720,
+    "message": {
+      "timestamp": false,
+      "user": "user_720",
+      "data": "message content 720"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 814,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 840,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 533,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_533",
+      "data": "message content 533"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 491,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_491",
+      "data": "message content 491"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 854,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 956,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 539,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_539",
+      "data": "message content 539"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 788,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_788",
+      "data": "message content 788"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 342,
+    "message": {
+      "user": "user_342",
+      "data": "message content 342"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 686,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_686",
+      "data": "message content 686"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 785,
+    "message": {
+      "timestamp": true,
+      "user": "user_785",
+      "data": "message content 785"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 984,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 125,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_125",
+      "data": "message content 125"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 408,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_408",
+      "data": "message content 408"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 986,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 91,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_91",
+      "data": "message content 91"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 18,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_18",
+      "data": "message content 18"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 909,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 206,
+    "message": {
+      "user": "user_206",
+      "data": "message content 206"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 401,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_401",
+      "data": "message content 401"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 316,
+    "message": {
+      "user": "user_316",
+      "data": "message content 316"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 99,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_99",
+      "data": "message content 99"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 133,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_133",
+      "data": "message content 133"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 103,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_103",
+      "data": "message content 103"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 132,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_132",
+      "data": "message content 132"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 498,
+    "message": {
+      "timestamp": "",
+      "user": "user_498",
+      "data": "message content 498"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 493,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_493",
+      "data": "message content 493"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 598,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_598",
+      "data": "message content 598"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 989,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 191,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_191",
+      "data": "message content 191"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 678,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_678",
+      "data": "message content 678"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 9,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_9",
+      "data": "message content 9"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 45,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_45",
+      "data": "message content 45"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 846,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 817,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 161,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_161",
+      "data": "message content 161"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 201,
+    "message": {
+      "user": "user_201",
+      "data": "message content 201"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 48,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_48",
+      "data": "message content 48"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 933,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 266,
+    "message": {
+      "user": "user_266",
+      "data": "message content 266"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 181,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_181",
+      "data": "message content 181"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 387,
+    "message": {
+      "user": "user_387",
+      "data": "message content 387"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 405,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_405",
+      "data": "message content 405"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 852,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 697,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_697",
+      "data": "message content 697"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 591,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_591",
+      "data": "message content 591"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 991,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 268,
+    "message": {
+      "user": "user_268",
+      "data": "message content 268"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 973,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 896,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 172,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_172",
+      "data": "message content 172"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 0,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_0",
+      "data": "message content 0"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 922,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 731,
+    "message": {
+      "timestamp": false,
+      "user": "user_731",
+      "data": "message content 731"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 364,
+    "message": {
+      "user": "user_364",
+      "data": "message content 364"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 28,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_28",
+      "data": "message content 28"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 5,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_5",
+      "data": "message content 5"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 380,
+    "message": {
+      "user": "user_380",
+      "data": "message content 380"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 85,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_85",
+      "data": "message content 85"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 288,
+    "message": {
+      "user": "user_288",
+      "data": "message content 288"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 228,
+    "message": {
+      "user": "user_228",
+      "data": "message content 228"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 913,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 955,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 200,
+    "message": {
+      "user": "user_200",
+      "data": "message content 200"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 223,
+    "message": {
+      "user": "user_223",
+      "data": "message content 223"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 138,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_138",
+      "data": "message content 138"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 137,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_137",
+      "data": "message content 137"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 577,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_577",
+      "data": "message content 577"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 628,
+    "message": {
+      "timestamp": null,
+      "user": "user_628",
+      "data": "message content 628"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 204,
+    "message": {
+      "user": "user_204",
+      "data": "message content 204"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 831,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 923,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 302,
+    "message": {
+      "user": "user_302",
+      "data": "message content 302"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 53,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_53",
+      "data": "message content 53"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 658,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_658",
+      "data": "message content 658"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 996,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 371,
+    "message": {
+      "user": "user_371",
+      "data": "message content 371"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 745,
+    "message": {
+      "timestamp": true,
+      "user": "user_745",
+      "data": "message content 745"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 222,
+    "message": {
+      "user": "user_222",
+      "data": "message content 222"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 290,
+    "message": {
+      "user": "user_290",
+      "data": "message content 290"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 34,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_34",
+      "data": "message content 34"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 368,
+    "message": {
+      "user": "user_368",
+      "data": "message content 368"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 721,
+    "message": {
+      "timestamp": true,
+      "user": "user_721",
+      "data": "message content 721"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 911,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 130,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_130",
+      "data": "message content 130"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 136,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_136",
+      "data": "message content 136"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 253,
+    "message": {
+      "user": "user_253",
+      "data": "message content 253"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 977,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 759,
+    "message": {
+      "timestamp": true,
+      "user": "user_759",
+      "data": "message content 759"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 856,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 373,
+    "message": {
+      "user": "user_373",
+      "data": "message content 373"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 581,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_581",
+      "data": "message content 581"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 511,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_511",
+      "data": "message content 511"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 715,
+    "message": {
+      "timestamp": null,
+      "user": "user_715",
+      "data": "message content 715"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 988,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 213,
+    "message": {
+      "user": "user_213",
+      "data": "message content 213"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 672,
+    "message": {
+      "timestamp": null,
+      "user": "user_672",
+      "data": "message content 672"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 96,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_96",
+      "data": "message content 96"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 220,
+    "message": {
+      "user": "user_220",
+      "data": "message content 220"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 919,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 966,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 431,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_431",
+      "data": "message content 431"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 144,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_144",
+      "data": "message content 144"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 199,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_199",
+      "data": "message content 199"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 567,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_567",
+      "data": "message content 567"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 550,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_550",
+      "data": "message content 550"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 553,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_553",
+      "data": "message content 553"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 297,
+    "message": {
+      "user": "user_297",
+      "data": "message content 297"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 671,
+    "message": {
+      "timestamp": null,
+      "user": "user_671",
+      "data": "message content 671"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 855,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 522,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_522",
+      "data": "message content 522"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 440,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_440",
+      "data": "message content 440"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 866,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 456,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_456",
+      "data": "message content 456"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 68,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_68",
+      "data": "message content 68"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 6,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_6",
+      "data": "message content 6"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 163,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_163",
+      "data": "message content 163"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 727,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_727",
+      "data": "message content 727"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 207,
+    "message": {
+      "user": "user_207",
+      "data": "message content 207"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 547,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_547",
+      "data": "message content 547"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 592,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_592",
+      "data": "message content 592"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 357,
+    "message": {
+      "user": "user_357",
+      "data": "message content 357"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 682,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_682",
+      "data": "message content 682"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 94,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_94",
+      "data": "message content 94"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 680,
+    "message": {
+      "timestamp": true,
+      "user": "user_680",
+      "data": "message content 680"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 736,
+    "message": {
+      "timestamp": null,
+      "user": "user_736",
+      "data": "message content 736"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 27,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_27",
+      "data": "message content 27"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 687,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_687",
+      "data": "message content 687"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 858,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 600,
+    "message": {
+      "timestamp": true,
+      "user": "user_600",
+      "data": "message content 600"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 482,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_482",
+      "data": "message content 482"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 235,
+    "message": {
+      "user": "user_235",
+      "data": "message content 235"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 504,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_504",
+      "data": "message content 504"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 826,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 810,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 588,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_588",
+      "data": "message content 588"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 691,
+    "message": {
+      "timestamp": null,
+      "user": "user_691",
+      "data": "message content 691"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 829,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 307,
+    "message": {
+      "user": "user_307",
+      "data": "message content 307"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 722,
+    "message": {
+      "timestamp": true,
+      "user": "user_722",
+      "data": "message content 722"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 513,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_513",
+      "data": "message content 513"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 662,
+    "message": {
+      "timestamp": true,
+      "user": "user_662",
+      "data": "message content 662"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 765,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_765",
+      "data": "message content 765"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 657,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_657",
+      "data": "message content 657"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 171,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_171",
+      "data": "message content 171"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 798,
+    "message": {
+      "timestamp": false,
+      "user": "user_798",
+      "data": "message content 798"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 210,
+    "message": {
+      "user": "user_210",
+      "data": "message content 210"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 333,
+    "message": {
+      "user": "user_333",
+      "data": "message content 333"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 150,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_150",
+      "data": "message content 150"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 263,
+    "message": {
+      "user": "user_263",
+      "data": "message content 263"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 142,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_142",
+      "data": "message content 142"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 939,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 862,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 366,
+    "message": {
+      "user": "user_366",
+      "data": "message content 366"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 874,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 359,
+    "message": {
+      "user": "user_359",
+      "data": "message content 359"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 219,
+    "message": {
+      "user": "user_219",
+      "data": "message content 219"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 954,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 694,
+    "message": {
+      "timestamp": false,
+      "user": "user_694",
+      "data": "message content 694"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 868,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 775,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_775",
+      "data": "message content 775"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 394,
+    "message": {
+      "user": "user_394",
+      "data": "message content 394"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 175,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_175",
+      "data": "message content 175"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 39,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_39",
+      "data": "message content 39"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 625,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_625",
+      "data": "message content 625"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 65,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_65",
+      "data": "message content 65"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 841,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 334,
+    "message": {
+      "user": "user_334",
+      "data": "message content 334"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 109,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_109",
+      "data": "message content 109"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 594,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_594",
+      "data": "message content 594"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 24,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_24",
+      "data": "message content 24"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 427,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_427",
+      "data": "message content 427"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 835,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 675,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_675",
+      "data": "message content 675"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 859,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 211,
+    "message": {
+      "user": "user_211",
+      "data": "message content 211"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 86,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_86",
+      "data": "message content 86"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 781,
+    "message": {
+      "timestamp": true,
+      "user": "user_781",
+      "data": "message content 781"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 293,
+    "message": {
+      "user": "user_293",
+      "data": "message content 293"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 399,
+    "message": {
+      "user": "user_399",
+      "data": "message content 399"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 805,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 660,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_660",
+      "data": "message content 660"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 847,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 523,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_523",
+      "data": "message content 523"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 428,
+    "message": {
+      "timestamp": "",
+      "user": "user_428",
+      "data": "message content 428"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 485,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_485",
+      "data": "message content 485"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 224,
+    "message": {
+      "user": "user_224",
+      "data": "message content 224"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 166,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_166",
+      "data": "message content 166"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 962,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 259,
+    "message": {
+      "user": "user_259",
+      "data": "message content 259"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 951,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 617,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_617",
+      "data": "message content 617"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 320,
+    "message": {
+      "user": "user_320",
+      "data": "message content 320"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 821,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 882,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 265,
+    "message": {
+      "user": "user_265",
+      "data": "message content 265"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 903,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 783,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_783",
+      "data": "message content 783"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 797,
+    "message": {
+      "timestamp": true,
+      "user": "user_797",
+      "data": "message content 797"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 281,
+    "message": {
+      "user": "user_281",
+      "data": "message content 281"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 875,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 948,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 762,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_762",
+      "data": "message content 762"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 182,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_182",
+      "data": "message content 182"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 469,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_469",
+      "data": "message content 469"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 656,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_656",
+      "data": "message content 656"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 631,
+    "message": {
+      "timestamp": false,
+      "user": "user_631",
+      "data": "message content 631"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 159,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_159",
+      "data": "message content 159"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 975,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 969,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 865,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 255,
+    "message": {
+      "user": "user_255",
+      "data": "message content 255"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 354,
+    "message": {
+      "user": "user_354",
+      "data": "message content 354"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 710,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_710",
+      "data": "message content 710"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 433,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_433",
+      "data": "message content 433"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 818,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 895,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 673,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_673",
+      "data": "message content 673"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 934,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 857,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 218,
+    "message": {
+      "user": "user_218",
+      "data": "message content 218"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 205,
+    "message": {
+      "user": "user_205",
+      "data": "message content 205"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 632,
+    "message": {
+      "timestamp": true,
+      "user": "user_632",
+      "data": "message content 632"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 733,
+    "message": {
+      "timestamp": true,
+      "user": "user_733",
+      "data": "message content 733"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 561,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_561",
+      "data": "message content 561"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 698,
+    "message": {
+      "timestamp": true,
+      "user": "user_698",
+      "data": "message content 698"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 361,
+    "message": {
+      "user": "user_361",
+      "data": "message content 361"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 22,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_22",
+      "data": "message content 22"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 905,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 860,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 787,
+    "message": {
+      "timestamp": true,
+      "user": "user_787",
+      "data": "message content 787"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 376,
+    "message": {
+      "user": "user_376",
+      "data": "message content 376"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 262,
+    "message": {
+      "user": "user_262",
+      "data": "message content 262"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 378,
+    "message": {
+      "user": "user_378",
+      "data": "message content 378"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 229,
+    "message": {
+      "user": "user_229",
+      "data": "message content 229"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 243,
+    "message": {
+      "user": "user_243",
+      "data": "message content 243"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 365,
+    "message": {
+      "user": "user_365",
+      "data": "message content 365"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 404,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_404",
+      "data": "message content 404"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 269,
+    "message": {
+      "user": "user_269",
+      "data": "message content 269"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 215,
+    "message": {
+      "user": "user_215",
+      "data": "message content 215"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 987,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 985,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 549,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_549",
+      "data": "message content 549"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 813,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 8,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_8",
+      "data": "message content 8"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 165,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_165",
+      "data": "message content 165"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 735,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_735",
+      "data": "message content 735"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 889,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 574,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_574",
+      "data": "message content 574"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 626,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_626",
+      "data": "message content 626"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 13,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_13",
+      "data": "message content 13"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 56,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_56",
+      "data": "message content 56"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 559,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_559",
+      "data": "message content 559"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 681,
+    "message": {
+      "timestamp": null,
+      "user": "user_681",
+      "data": "message content 681"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 406,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_406",
+      "data": "message content 406"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 803,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 74,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_74",
+      "data": "message content 74"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 319,
+    "message": {
+      "user": "user_319",
+      "data": "message content 319"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 655,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_655",
+      "data": "message content 655"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 800,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 168,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_168",
+      "data": "message content 168"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 886,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 110,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_110",
+      "data": "message content 110"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 619,
+    "message": {
+      "timestamp": true,
+      "user": "user_619",
+      "data": "message content 619"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 106,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_106",
+      "data": "message content 106"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 844,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 35,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_35",
+      "data": "message content 35"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 959,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 645,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_645",
+      "data": "message content 645"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 64,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_64",
+      "data": "message content 64"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 772,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_772",
+      "data": "message content 772"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 536,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_536",
+      "data": "message content 536"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 462,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_462",
+      "data": "message content 462"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 930,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 596,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_596",
+      "data": "message content 596"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 963,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 584,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_584",
+      "data": "message content 584"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 742,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_742",
+      "data": "message content 742"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 62,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_62",
+      "data": "message content 62"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 647,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_647",
+      "data": "message content 647"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 141,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_141",
+      "data": "message content 141"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 573,
+    "message": {
+      "timestamp": "",
+      "user": "user_573",
+      "data": "message content 573"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 31,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_31",
+      "data": "message content 31"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 478,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_478",
+      "data": "message content 478"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 712,
+    "message": {
+      "timestamp": false,
+      "user": "user_712",
+      "data": "message content 712"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 385,
+    "message": {
+      "user": "user_385",
+      "data": "message content 385"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 527,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_527",
+      "data": "message content 527"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 683,
+    "message": {
+      "timestamp": null,
+      "user": "user_683",
+      "data": "message content 683"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 350,
+    "message": {
+      "user": "user_350",
+      "data": "message content 350"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 925,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 227,
+    "message": {
+      "user": "user_227",
+      "data": "message content 227"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 111,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_111",
+      "data": "message content 111"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 375,
+    "message": {
+      "user": "user_375",
+      "data": "message content 375"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 16,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_16",
+      "data": "message content 16"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 143,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_143",
+      "data": "message content 143"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 992,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 315,
+    "message": {
+      "user": "user_315",
+      "data": "message content 315"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 525,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_525",
+      "data": "message content 525"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 50,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_50",
+      "data": "message content 50"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 335,
+    "message": {
+      "user": "user_335",
+      "data": "message content 335"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 578,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_578",
+      "data": "message content 578"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 79,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_79",
+      "data": "message content 79"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 636,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_636",
+      "data": "message content 636"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 214,
+    "message": {
+      "user": "user_214",
+      "data": "message content 214"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 415,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_415",
+      "data": "message content 415"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 343,
+    "message": {
+      "user": "user_343",
+      "data": "message content 343"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 849,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 400,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_400",
+      "data": "message content 400"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 836,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 69,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_69",
+      "data": "message content 69"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 692,
+    "message": {
+      "timestamp": null,
+      "user": "user_692",
+      "data": "message content 692"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 621,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_621",
+      "data": "message content 621"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 575,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_575",
+      "data": "message content 575"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 362,
+    "message": {
+      "user": "user_362",
+      "data": "message content 362"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 252,
+    "message": {
+      "user": "user_252",
+      "data": "message content 252"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 572,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_572",
+      "data": "message content 572"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 19,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_19",
+      "data": "message content 19"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 23,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_23",
+      "data": "message content 23"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 604,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_604",
+      "data": "message content 604"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 59,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_59",
+      "data": "message content 59"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 209,
+    "message": {
+      "user": "user_209",
+      "data": "message content 209"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 532,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_532",
+      "data": "message content 532"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 890,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 926,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 515,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_515",
+      "data": "message content 515"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 906,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 32,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_32",
+      "data": "message content 32"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 659,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_659",
+      "data": "message content 659"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 113,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_113",
+      "data": "message content 113"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 774,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_774",
+      "data": "message content 774"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 422,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_422",
+      "data": "message content 422"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 287,
+    "message": {
+      "user": "user_287",
+      "data": "message content 287"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 447,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_447",
+      "data": "message content 447"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 981,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 241,
+    "message": {
+      "user": "user_241",
+      "data": "message content 241"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 119,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_119",
+      "data": "message content 119"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 396,
+    "message": {
+      "user": "user_396",
+      "data": "message content 396"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 651,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_651",
+      "data": "message content 651"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 190,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_190",
+      "data": "message content 190"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 326,
+    "message": {
+      "user": "user_326",
+      "data": "message content 326"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 586,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_586",
+      "data": "message content 586"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 822,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 639,
+    "message": {
+      "timestamp": true,
+      "user": "user_639",
+      "data": "message content 639"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 384,
+    "message": {
+      "user": "user_384",
+      "data": "message content 384"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 528,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_528",
+      "data": "message content 528"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 921,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 808,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 542,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_542",
+      "data": "message content 542"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 63,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_63",
+      "data": "message content 63"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 937,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 135,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_135",
+      "data": "message content 135"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 7,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_7",
+      "data": "message content 7"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 711,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_711",
+      "data": "message content 711"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 894,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 880,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 931,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 997,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 345,
+    "message": {
+      "user": "user_345",
+      "data": "message content 345"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 648,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_648",
+      "data": "message content 648"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 876,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 115,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_115",
+      "data": "message content 115"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 540,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_540",
+      "data": "message content 540"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 843,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 38,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_38",
+      "data": "message content 38"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 980,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 58,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_58",
+      "data": "message content 58"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 173,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_173",
+      "data": "message content 173"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 524,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_524",
+      "data": "message content 524"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 652,
+    "message": {
+      "timestamp": false,
+      "user": "user_652",
+      "data": "message content 652"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 971,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 131,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_131",
+      "data": "message content 131"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 84,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_84",
+      "data": "message content 84"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 605,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_605",
+      "data": "message content 605"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 701,
+    "message": {
+      "timestamp": null,
+      "user": "user_701",
+      "data": "message content 701"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 654,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_654",
+      "data": "message content 654"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 187,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_187",
+      "data": "message content 187"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 949,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 402,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_402",
+      "data": "message content 402"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 615,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_615",
+      "data": "message content 615"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 665,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_665",
+      "data": "message content 665"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 89,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_89",
+      "data": "message content 89"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 767,
+    "message": {
+      "timestamp": true,
+      "user": "user_767",
+      "data": "message content 767"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 382,
+    "message": {
+      "user": "user_382",
+      "data": "message content 382"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 167,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_167",
+      "data": "message content 167"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 474,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_474",
+      "data": "message content 474"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 825,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 67,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_67",
+      "data": "message content 67"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 374,
+    "message": {
+      "user": "user_374",
+      "data": "message content 374"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 916,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 296,
+    "message": {
+      "user": "user_296",
+      "data": "message content 296"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 884,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 225,
+    "message": {
+      "user": "user_225",
+      "data": "message content 225"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 403,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_403",
+      "data": "message content 403"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 558,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_558",
+      "data": "message content 558"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 20,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_20",
+      "data": "message content 20"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 740,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_740",
+      "data": "message content 740"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 437,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_437",
+      "data": "message content 437"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 49,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_49",
+      "data": "message content 49"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 321,
+    "message": {
+      "user": "user_321",
+      "data": "message content 321"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 976,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 429,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_429",
+      "data": "message content 429"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 695,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_695",
+      "data": "message content 695"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 471,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_471",
+      "data": "message content 471"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 580,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_580",
+      "data": "message content 580"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 833,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 585,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_585",
+      "data": "message content 585"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 347,
+    "message": {
+      "user": "user_347",
+      "data": "message content 347"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 885,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 317,
+    "message": {
+      "user": "user_317",
+      "data": "message content 317"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 97,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_97",
+      "data": "message content 97"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 944,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 112,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_112",
+      "data": "message content 112"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 953,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 950,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 709,
+    "message": {
+      "timestamp": null,
+      "user": "user_709",
+      "data": "message content 709"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 998,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 409,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_409",
+      "data": "message content 409"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 397,
+    "message": {
+      "user": "user_397",
+      "data": "message content 397"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 516,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_516",
+      "data": "message content 516"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 786,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_786",
+      "data": "message content 786"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 790,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_790",
+      "data": "message content 790"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 463,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_463",
+      "data": "message content 463"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 310,
+    "message": {
+      "user": "user_310",
+      "data": "message content 310"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 25,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_25",
+      "data": "message content 25"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 381,
+    "message": {
+      "user": "user_381",
+      "data": "message content 381"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 398,
+    "message": {
+      "user": "user_398",
+      "data": "message content 398"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 351,
+    "message": {
+      "user": "user_351",
+      "data": "message content 351"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 704,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_704",
+      "data": "message content 704"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 597,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_597",
+      "data": "message content 597"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 517,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_517",
+      "data": "message content 517"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 140,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_140",
+      "data": "message content 140"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 734,
+    "message": {
+      "timestamp": null,
+      "user": "user_734",
+      "data": "message content 734"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 670,
+    "message": {
+      "timestamp": true,
+      "user": "user_670",
+      "data": "message content 670"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 893,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 11,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_11",
+      "data": "message content 11"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 942,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 358,
+    "message": {
+      "user": "user_358",
+      "data": "message content 358"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 151,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_151",
+      "data": "message content 151"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 918,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 832,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 292,
+    "message": {
+      "user": "user_292",
+      "data": "message content 292"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 607,
+    "message": {
+      "timestamp": null,
+      "user": "user_607",
+      "data": "message content 607"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 789,
+    "message": {
+      "timestamp": null,
+      "user": "user_789",
+      "data": "message content 789"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 796,
+    "message": {
+      "timestamp": false,
+      "user": "user_796",
+      "data": "message content 796"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 898,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 436,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_436",
+      "data": "message content 436"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 958,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 927,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 154,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_154",
+      "data": "message content 154"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 432,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_432",
+      "data": "message content 432"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 233,
+    "message": {
+      "user": "user_233",
+      "data": "message content 233"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 128,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_128",
+      "data": "message content 128"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 696,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_696",
+      "data": "message content 696"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 914,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 492,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_492",
+      "data": "message content 492"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 327,
+    "message": {
+      "user": "user_327",
+      "data": "message content 327"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 153,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_153",
+      "data": "message content 153"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 649,
+    "message": {
+      "timestamp": false,
+      "user": "user_649",
+      "data": "message content 649"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 176,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_176",
+      "data": "message content 176"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 613,
+    "message": {
+      "timestamp": true,
+      "user": "user_613",
+      "data": "message content 613"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 881,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 570,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_570",
+      "data": "message content 570"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 938,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 616,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_616",
+      "data": "message content 616"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 554,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_554",
+      "data": "message content 554"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 560,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_560",
+      "data": "message content 560"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 753,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_753",
+      "data": "message content 753"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 238,
+    "message": {
+      "user": "user_238",
+      "data": "message content 238"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 411,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_411",
+      "data": "message content 411"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 460,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_460",
+      "data": "message content 460"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 4,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_4",
+      "data": "message content 4"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 674,
+    "message": {
+      "timestamp": true,
+      "user": "user_674",
+      "data": "message content 674"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 261,
+    "message": {
+      "user": "user_261",
+      "data": "message content 261"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 957,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 260,
+    "message": {
+      "user": "user_260",
+      "data": "message content 260"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 622,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_622",
+      "data": "message content 622"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 747,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_747",
+      "data": "message content 747"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 146,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_146",
+      "data": "message content 146"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 509,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_509",
+      "data": "message content 509"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 892,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 391,
+    "message": {
+      "user": "user_391",
+      "data": "message content 391"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 80,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_80",
+      "data": "message content 80"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 689,
+    "message": {
+      "timestamp": null,
+      "user": "user_689",
+      "data": "message content 689"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 174,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_174",
+      "data": "message content 174"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 184,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_184",
+      "data": "message content 184"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 669,
+    "message": {
+      "timestamp": true,
+      "user": "user_669",
+      "data": "message content 669"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 250,
+    "message": {
+      "user": "user_250",
+      "data": "message content 250"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 149,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_149",
+      "data": "message content 149"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 441,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_441",
+      "data": "message content 441"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 383,
+    "message": {
+      "user": "user_383",
+      "data": "message content 383"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 367,
+    "message": {
+      "user": "user_367",
+      "data": "message content 367"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 300,
+    "message": {
+      "user": "user_300",
+      "data": "message content 300"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 57,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_57",
+      "data": "message content 57"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 917,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 47,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_47",
+      "data": "message content 47"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 634,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_634",
+      "data": "message content 634"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 306,
+    "message": {
+      "user": "user_306",
+      "data": "message content 306"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 170,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_170",
+      "data": "message content 170"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 454,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_454",
+      "data": "message content 454"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 784,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_784",
+      "data": "message content 784"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 100,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_100",
+      "data": "message content 100"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 444,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_444",
+      "data": "message content 444"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 92,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_92",
+      "data": "message content 92"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 834,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 638,
+    "message": {
+      "timestamp": null,
+      "user": "user_638",
+      "data": "message content 638"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 240,
+    "message": {
+      "user": "user_240",
+      "data": "message content 240"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 972,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 36,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_36",
+      "data": "message content 36"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 915,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 324,
+    "message": {
+      "user": "user_324",
+      "data": "message content 324"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 851,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 828,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 336,
+    "message": {
+      "user": "user_336",
+      "data": "message content 336"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 891,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 407,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_407",
+      "data": "message content 407"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 346,
+    "message": {
+      "user": "user_346",
+      "data": "message content 346"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 271,
+    "message": {
+      "user": "user_271",
+      "data": "message content 271"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 812,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 769,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_769",
+      "data": "message content 769"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 158,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_158",
+      "data": "message content 158"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 419,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_419",
+      "data": "message content 419"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 147,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_147",
+      "data": "message content 147"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 15,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_15",
+      "data": "message content 15"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 839,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 538,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_538",
+      "data": "message content 538"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 823,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 450,
+    "message": {
+      "timestamp": "",
+      "user": "user_450",
+      "data": "message content 450"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 837,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 339,
+    "message": {
+      "user": "user_339",
+      "data": "message content 339"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 514,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_514",
+      "data": "message content 514"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 820,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 664,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_664",
+      "data": "message content 664"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 668,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_668",
+      "data": "message content 668"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 795,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_795",
+      "data": "message content 795"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 395,
+    "message": {
+      "user": "user_395",
+      "data": "message content 395"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 390,
+    "message": {
+      "user": "user_390",
+      "data": "message content 390"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 873,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 325,
+    "message": {
+      "user": "user_325",
+      "data": "message content 325"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 44,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_44",
+      "data": "message content 44"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 420,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_420",
+      "data": "message content 420"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 739,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_739",
+      "data": "message content 739"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 952,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 244,
+    "message": {
+      "user": "user_244",
+      "data": "message content 244"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 193,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_193",
+      "data": "message content 193"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 329,
+    "message": {
+      "user": "user_329",
+      "data": "message content 329"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 466,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_466",
+      "data": "message content 466"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 386,
+    "message": {
+      "user": "user_386",
+      "data": "message content 386"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 556,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_556",
+      "data": "message content 556"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 627,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_627",
+      "data": "message content 627"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 340,
+    "message": {
+      "user": "user_340",
+      "data": "message content 340"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 353,
+    "message": {
+      "user": "user_353",
+      "data": "message content 353"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 940,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 945,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 457,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_457",
+      "data": "message content 457"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 888,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 999,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 593,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_593",
+      "data": "message content 593"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 305,
+    "message": {
+      "user": "user_305",
+      "data": "message content 305"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 744,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_744",
+      "data": "message content 744"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 755,
+    "message": {
+      "timestamp": false,
+      "user": "user_755",
+      "data": "message content 755"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 641,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_641",
+      "data": "message content 641"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 519,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_519",
+      "data": "message content 519"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 809,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 424,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_424",
+      "data": "message content 424"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 904,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 71,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_71",
+      "data": "message content 71"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 139,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_139",
+      "data": "message content 139"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 520,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_520",
+      "data": "message content 520"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 900,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 392,
+    "message": {
+      "user": "user_392",
+      "data": "message content 392"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 148,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_148",
+      "data": "message content 148"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 629,
+    "message": {
+      "timestamp": true,
+      "user": "user_629",
+      "data": "message content 629"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 467,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_467",
+      "data": "message content 467"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 878,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 483,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_483",
+      "data": "message content 483"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 494,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_494",
+      "data": "message content 494"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 425,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_425",
+      "data": "message content 425"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 279,
+    "message": {
+      "user": "user_279",
+      "data": "message content 279"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 521,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_521",
+      "data": "message content 521"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 749,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_749",
+      "data": "message content 749"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 646,
+    "message": {
+      "timestamp": true,
+      "user": "user_646",
+      "data": "message content 646"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 157,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_157",
+      "data": "message content 157"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 120,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_120",
+      "data": "message content 120"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 472,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_472",
+      "data": "message content 472"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 804,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 730,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_730",
+      "data": "message content 730"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 883,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 417,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_417",
+      "data": "message content 417"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 758,
+    "message": {
+      "timestamp": null,
+      "user": "user_758",
+      "data": "message content 758"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 830,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 564,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_564",
+      "data": "message content 564"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 318,
+    "message": {
+      "user": "user_318",
+      "data": "message content 318"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 162,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_162",
+      "data": "message content 162"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 853,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 623,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_623",
+      "data": "message content 623"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 920,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 124,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_124",
+      "data": "message content 124"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 496,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_496",
+      "data": "message content 496"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 879,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 294,
+    "message": {
+      "user": "user_294",
+      "data": "message content 294"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 134,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_134",
+      "data": "message content 134"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 562,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_562",
+      "data": "message content 562"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 273,
+    "message": {
+      "user": "user_273",
+      "data": "message content 273"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 208,
+    "message": {
+      "user": "user_208",
+      "data": "message content 208"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 807,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 685,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_685",
+      "data": "message content 685"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 897,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 510,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_510",
+      "data": "message content 510"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 637,
+    "message": {
+      "timestamp": false,
+      "user": "user_637",
+      "data": "message content 637"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 961,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 530,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_530",
+      "data": "message content 530"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 192,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_192",
+      "data": "message content 192"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 983,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 423,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_423",
+      "data": "message content 423"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 473,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_473",
+      "data": "message content 473"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 555,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_555",
+      "data": "message content 555"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 1,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_1",
+      "data": "message content 1"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 526,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_526",
+      "data": "message content 526"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 413,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_413",
+      "data": "message content 413"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 118,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_118",
+      "data": "message content 118"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 331,
+    "message": {
+      "user": "user_331",
+      "data": "message content 331"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 806,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 322,
+    "message": {
+      "user": "user_322",
+      "data": "message content 322"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 90,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_90",
+      "data": "message content 90"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 465,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_465",
+      "data": "message content 465"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 37,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_37",
+      "data": "message content 37"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 867,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 802,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 743,
+    "message": {
+      "timestamp": null,
+      "user": "user_743",
+      "data": "message content 743"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 507,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_507",
+      "data": "message content 507"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 421,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_421",
+      "data": "message content 421"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 337,
+    "message": {
+      "user": "user_337",
+      "data": "message content 337"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 164,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_164",
+      "data": "message content 164"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 107,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_107",
+      "data": "message content 107"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 328,
+    "message": {
+      "user": "user_328",
+      "data": "message content 328"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 341,
+    "message": {
+      "user": "user_341",
+      "data": "message content 341"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 754,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_754",
+      "data": "message content 754"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 356,
+    "message": {
+      "user": "user_356",
+      "data": "message content 356"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 693,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_693",
+      "data": "message content 693"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 699,
+    "message": {
+      "timestamp": null,
+      "user": "user_699",
+      "data": "message content 699"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 979,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 960,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 946,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 599,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_599",
+      "data": "message content 599"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 185,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_185",
+      "data": "message content 185"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 284,
+    "message": {
+      "user": "user_284",
+      "data": "message content 284"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 452,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_452",
+      "data": "message content 452"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 667,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_667",
+      "data": "message content 667"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 531,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_531",
+      "data": "message content 531"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 750,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_750",
+      "data": "message content 750"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 179,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_179",
+      "data": "message content 179"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 41,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_41",
+      "data": "message content 41"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 799,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_799",
+      "data": "message content 799"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 275,
+    "message": {
+      "user": "user_275",
+      "data": "message content 275"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 688,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_688",
+      "data": "message content 688"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 21,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_21",
+      "data": "message content 21"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 601,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_601",
+      "data": "message content 601"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 589,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_589",
+      "data": "message content 589"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 690,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_690",
+      "data": "message content 690"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 234,
+    "message": {
+      "user": "user_234",
+      "data": "message content 234"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 93,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_93",
+      "data": "message content 93"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 26,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_26",
+      "data": "message content 26"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 256,
+    "message": {
+      "user": "user_256",
+      "data": "message content 256"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 618,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_618",
+      "data": "message content 618"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 936,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 442,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_442",
+      "data": "message content 442"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 40,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_40",
+      "data": "message content 40"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 612,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_612",
+      "data": "message content 612"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 82,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_82",
+      "data": "message content 82"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 448,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_448",
+      "data": "message content 448"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 505,
+    "message": {
+      "timestamp": "",
+      "user": "user_505",
+      "data": "message content 505"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 552,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_552",
+      "data": "message content 552"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 512,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_512",
+      "data": "message content 512"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 278,
+    "message": {
+      "user": "user_278",
+      "data": "message content 278"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 412,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_412",
+      "data": "message content 412"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 792,
+    "message": {
+      "timestamp": true,
+      "user": "user_792",
+      "data": "message content 792"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 752,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_752",
+      "data": "message content 752"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 479,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_479",
+      "data": "message content 479"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 127,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_127",
+      "data": "message content 127"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 449,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_449",
+      "data": "message content 449"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 746,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_746",
+      "data": "message content 746"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 773,
+    "message": {
+      "timestamp": null,
+      "user": "user_773",
+      "data": "message content 773"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 609,
+    "message": {
+      "timestamp": true,
+      "user": "user_609",
+      "data": "message content 609"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 314,
+    "message": {
+      "user": "user_314",
+      "data": "message content 314"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 169,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_169",
+      "data": "message content 169"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 771,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_771",
+      "data": "message content 771"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 73,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_73",
+      "data": "message content 73"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 145,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_145",
+      "data": "message content 145"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 272,
+    "message": {
+      "user": "user_272",
+      "data": "message content 272"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 794,
+    "message": {
+      "timestamp": true,
+      "user": "user_794",
+      "data": "message content 794"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 970,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 230,
+    "message": {
+      "user": "user_230",
+      "data": "message content 230"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 557,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_557",
+      "data": "message content 557"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 117,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_117",
+      "data": "message content 117"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 967,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 202,
+    "message": {
+      "user": "user_202",
+      "data": "message content 202"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 974,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 965,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 766,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_766",
+      "data": "message content 766"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 764,
+    "message": {
+      "timestamp": false,
+      "user": "user_764",
+      "data": "message content 764"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 239,
+    "message": {
+      "user": "user_239",
+      "data": "message content 239"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 703,
+    "message": {
+      "timestamp": null,
+      "user": "user_703",
+      "data": "message content 703"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 72,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_72",
+      "data": "message content 72"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 863,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 864,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 838,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 723,
+    "message": {
+      "timestamp": null,
+      "user": "user_723",
+      "data": "message content 723"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 295,
+    "message": {
+      "user": "user_295",
+      "data": "message content 295"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 237,
+    "message": {
+      "user": "user_237",
+      "data": "message content 237"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 33,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_33",
+      "data": "message content 33"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 298,
+    "message": {
+      "user": "user_298",
+      "data": "message content 298"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 481,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_481",
+      "data": "message content 481"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 608,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_608",
+      "data": "message content 608"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 705,
+    "message": {
+      "timestamp": null,
+      "user": "user_705",
+      "data": "message content 705"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 779,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_779",
+      "data": "message content 779"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 418,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_418",
+      "data": "message content 418"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 2,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_2",
+      "data": "message content 2"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 761,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_761",
+      "data": "message content 761"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 76,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_76",
+      "data": "message content 76"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 565,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_565",
+      "data": "message content 565"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 177,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_177",
+      "data": "message content 177"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 245,
+    "message": {
+      "user": "user_245",
+      "data": "message content 245"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 160,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_160",
+      "data": "message content 160"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 83,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_83",
+      "data": "message content 83"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 676,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_676",
+      "data": "message content 676"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 270,
+    "message": {
+      "user": "user_270",
+      "data": "message content 270"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 216,
+    "message": {
+      "user": "user_216",
+      "data": "message content 216"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 640,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_640",
+      "data": "message content 640"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 212,
+    "message": {
+      "user": "user_212",
+      "data": "message content 212"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 101,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_101",
+      "data": "message content 101"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 757,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_757",
+      "data": "message content 757"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 924,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 61,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_61",
+      "data": "message content 61"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 635,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_635",
+      "data": "message content 635"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 582,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_582",
+      "data": "message content 582"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 312,
+    "message": {
+      "user": "user_312",
+      "data": "message content 312"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 439,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_439",
+      "data": "message content 439"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 602,
+    "message": {
+      "timestamp": null,
+      "user": "user_602",
+      "data": "message content 602"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 304,
+    "message": {
+      "user": "user_304",
+      "data": "message content 304"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 453,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_453",
+      "data": "message content 453"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 929,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 389,
+    "message": {
+      "user": "user_389",
+      "data": "message content 389"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 535,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_535",
+      "data": "message content 535"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 231,
+    "message": {
+      "user": "user_231",
+      "data": "message content 231"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 633,
+    "message": {
+      "timestamp": null,
+      "user": "user_633",
+      "data": "message content 633"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 907,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 620,
+    "message": {
+      "timestamp": true,
+      "user": "user_620",
+      "data": "message content 620"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 426,
+    "message": {
+      "timestamp": "",
+      "user": "user_426",
+      "data": "message content 426"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 782,
+    "message": {
+      "timestamp": false,
+      "user": "user_782",
+      "data": "message content 782"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 571,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_571",
+      "data": "message content 571"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 121,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_121",
+      "data": "message content 121"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 254,
+    "message": {
+      "user": "user_254",
+      "data": "message content 254"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 899,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 311,
+    "message": {
+      "user": "user_311",
+      "data": "message content 311"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 576,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_576",
+      "data": "message content 576"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 152,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_152",
+      "data": "message content 152"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 155,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_155",
+      "data": "message content 155"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 54,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_54",
+      "data": "message content 54"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 702,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_702",
+      "data": "message content 702"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 644,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_644",
+      "data": "message content 644"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 590,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_590",
+      "data": "message content 590"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 75,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_75",
+      "data": "message content 75"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 503,
+    "message": {
+      "timestamp": "24-01-15 10:30:45",
+      "user": "user_503",
+      "data": "message content 503"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 410,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_410",
+      "data": "message content 410"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 66,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_66",
+      "data": "message content 66"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 116,
+    "message": {
+      "timestamp": "2024-06-15 14:22:33",
+      "user": "user_116",
+      "data": "message content 116"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 489,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_489",
+      "data": "message content 489"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 258,
+    "message": {
+      "user": "user_258",
+      "data": "message content 258"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 52,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_52",
+      "data": "message content 52"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 188,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_188",
+      "data": "message content 188"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 910,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 451,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_451",
+      "data": "message content 451"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 490,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_490",
+      "data": "message content 490"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 480,
+    "message": {
+      "timestamp": "",
+      "user": "user_480",
+      "data": "message content 480"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 291,
+    "message": {
+      "user": "user_291",
+      "data": "message content 291"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 587,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_587",
+      "data": "message content 587"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 968,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 105,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_105",
+      "data": "message content 105"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 887,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 770,
+    "message": {
+      "timestamp": false,
+      "user": "user_770",
+      "data": "message content 770"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 653,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_653",
+      "data": "message content 653"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 947,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 714,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_714",
+      "data": "message content 714"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 299,
+    "message": {
+      "user": "user_299",
+      "data": "message content 299"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 935,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 55,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_55",
+      "data": "message content 55"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 46,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_46",
+      "data": "message content 46"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 280,
+    "message": {
+      "user": "user_280",
+      "data": "message content 280"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 129,
+    "message": {
+      "timestamp": "2023-12-31 23:59:59",
+      "user": "user_129",
+      "data": "message content 129"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 546,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_546",
+      "data": "message content 546"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 725,
+    "message": {
+      "timestamp": null,
+      "user": "user_725",
+      "data": "message content 725"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 14,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_14",
+      "data": "message content 14"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 309,
+    "message": {
+      "user": "user_309",
+      "data": "message content 309"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 183,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_183",
+      "data": "message content 183"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 369,
+    "message": {
+      "user": "user_369",
+      "data": "message content 369"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 232,
+    "message": {
+      "user": "user_232",
+      "data": "message content 232"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 303,
+    "message": {
+      "user": "user_303",
+      "data": "message content 303"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 198,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_198",
+      "data": "message content 198"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 102,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_102",
+      "data": "message content 102"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 289,
+    "message": {
+      "user": "user_289",
+      "data": "message content 289"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 611,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_611",
+      "data": "message content 611"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 537,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_537",
+      "data": "message content 537"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 778,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_778",
+      "data": "message content 778"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 603,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_603",
+      "data": "message content 603"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 741,
+    "message": {
+      "timestamp": false,
+      "user": "user_741",
+      "data": "message content 741"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 283,
+    "message": {
+      "user": "user_283",
+      "data": "message content 283"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 943,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 756,
+    "message": {
+      "timestamp": true,
+      "user": "user_756",
+      "data": "message content 756"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 221,
+    "message": {
+      "user": "user_221",
+      "data": "message content 221"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 196,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_196",
+      "data": "message content 196"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 189,
+    "message": {
+      "timestamp": "2024-03-10 08:15:00",
+      "user": "user_189",
+      "data": "message content 189"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 706,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_706",
+      "data": "message content 706"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 780,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_780",
+      "data": "message content 780"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 548,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_548",
+      "data": "message content 548"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 760,
+    "message": {
+      "timestamp": false,
+      "user": "user_760",
+      "data": "message content 760"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 122,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_122",
+      "data": "message content 122"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 323,
+    "message": {
+      "user": "user_323",
+      "data": "message content 323"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 197,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_197",
+      "data": "message content 197"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 738,
+    "message": {
+      "timestamp": true,
+      "user": "user_738",
+      "data": "message content 738"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 982,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 236,
+    "message": {
+      "user": "user_236",
+      "data": "message content 236"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 257,
+    "message": {
+      "user": "user_257",
+      "data": "message content 257"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 877,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 277,
+    "message": {
+      "user": "user_277",
+      "data": "message content 277"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 464,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_464",
+      "data": "message content 464"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 719,
+    "message": {
+      "timestamp": null,
+      "user": "user_719",
+      "data": "message content 719"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 360,
+    "message": {
+      "user": "user_360",
+      "data": "message content 360"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 338,
+    "message": {
+      "user": "user_338",
+      "data": "message content 338"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 563,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_563",
+      "data": "message content 563"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 763,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_763",
+      "data": "message content 763"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 435,
+    "message": {
+      "timestamp": "2024-01-15 10:70:45",
+      "user": "user_435",
+      "data": "message content 435"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 352,
+    "message": {
+      "user": "user_352",
+      "data": "message content 352"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 543,
+    "message": {
+      "timestamp": "abcd-ef-gh ij:kl:mn",
+      "user": "user_543",
+      "data": "message content 543"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 566,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_566",
+      "data": "message content 566"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 484,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_484",
+      "data": "message content 484"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 377,
+    "message": {
+      "user": "user_377",
+      "data": "message content 377"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 595,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_595",
+      "data": "message content 595"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 679,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_679",
+      "data": "message content 679"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 313,
+    "message": {
+      "user": "user_313",
+      "data": "message content 313"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 928,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 708,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_708",
+      "data": "message content 708"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 414,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_414",
+      "data": "message content 414"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 226,
+    "message": {
+      "user": "user_226",
+      "data": "message content 226"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 301,
+    "message": {
+      "user": "user_301",
+      "data": "message content 301"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 95,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_95",
+      "data": "message content 95"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 17,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_17",
+      "data": "message content 17"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 811,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 458,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_458",
+      "data": "message content 458"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 502,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_502",
+      "data": "message content 502"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 728,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_728",
+      "data": "message content 728"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 661,
+    "message": {
+      "timestamp": null,
+      "user": "user_661",
+      "data": "message content 661"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 487,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_487",
+      "data": "message content 487"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 994,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 246,
+    "message": {
+      "user": "user_246",
+      "data": "message content 246"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 776,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_776",
+      "data": "message content 776"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 568,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_568",
+      "data": "message content 568"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 500,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_500",
+      "data": "message content 500"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 416,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_416",
+      "data": "message content 416"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 737,
+    "message": {
+      "timestamp": true,
+      "user": "user_737",
+      "data": "message content 737"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 247,
+    "message": {
+      "user": "user_247",
+      "data": "message content 247"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 87,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_87",
+      "data": "message content 87"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 195,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_195",
+      "data": "message content 195"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 529,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_529",
+      "data": "message content 529"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 10,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_10",
+      "data": "message content 10"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 569,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_569",
+      "data": "message content 569"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 282,
+    "message": {
+      "user": "user_282",
+      "data": "message content 282"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 908,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 718,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_718",
+      "data": "message content 718"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 610,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_610",
+      "data": "message content 610"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 901,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 286,
+    "message": {
+      "user": "user_286",
+      "data": "message content 286"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 348,
+    "message": {
+      "user": "user_348",
+      "data": "message content 348"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 264,
+    "message": {
+      "user": "user_264",
+      "data": "message content 264"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 816,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 363,
+    "message": {
+      "user": "user_363",
+      "data": "message content 363"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 217,
+    "message": {
+      "user": "user_217",
+      "data": "message content 217"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 499,
+    "message": {
+      "timestamp": "",
+      "user": "user_499",
+      "data": "message content 499"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 186,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_186",
+      "data": "message content 186"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 332,
+    "message": {
+      "user": "user_332",
+      "data": "message content 332"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 871,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 506,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_506",
+      "data": "message content 506"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 29,
+    "message": {
+      "timestamp": "2024-02-29 09:30:15",
+      "user": "user_29",
+      "data": "message content 29"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 344,
+    "message": {
+      "user": "user_344",
+      "data": "message content 344"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 388,
+    "message": {
+      "user": "user_388",
+      "data": "message content 388"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 684,
+    "message": {
+      "timestamp": false,
+      "user": "user_684",
+      "data": "message content 684"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 624,
+    "message": {
+      "timestamp": true,
+      "user": "user_624",
+      "data": "message content 624"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 583,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_583",
+      "data": "message content 583"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 475,
+    "message": {
+      "timestamp": "2024-01-15",
+      "user": "user_475",
+      "data": "message content 475"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 768,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_768",
+      "data": "message content 768"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 249,
+    "message": {
+      "user": "user_249",
+      "data": "message content 249"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 461,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_461",
+      "data": "message content 461"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 902,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 285,
+    "message": {
+      "user": "user_285",
+      "data": "message content 285"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 88,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_88",
+      "data": "message content 88"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 993,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 251,
+    "message": {
+      "user": "user_251",
+      "data": "message content 251"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 872,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 330,
+    "message": {
+      "user": "user_330",
+      "data": "message content 330"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 274,
+    "message": {
+      "user": "user_274",
+      "data": "message content 274"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 995,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 748,
+    "message": {
+      "timestamp": true,
+      "user": "user_748",
+      "data": "message content 748"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 845,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 446,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_446",
+      "data": "message content 446"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 476,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_476",
+      "data": "message content 476"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 495,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_495",
+      "data": "message content 495"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 793,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_793",
+      "data": "message content 793"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 551,
+    "message": {
+      "timestamp": "2024-01-15 10:30:70",
+      "user": "user_551",
+      "data": "message content 551"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 941,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 827,
+    "message": null,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 630,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_630",
+      "data": "message content 630"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 276,
+    "message": {
+      "user": "user_276",
+      "data": "message content 276"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 666,
+    "message": {
+      "timestamp": false,
+      "user": "user_666",
+      "data": "message content 666"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 534,
+    "message": {
+      "timestamp": "2024-13-01 10:30:45",
+      "user": "user_534",
+      "data": "message content 534"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 751,
+    "message": {
+      "timestamp": true,
+      "user": "user_751",
+      "data": "message content 751"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 180,
+    "message": {
+      "timestamp": "2024-05-01 11:11:11",
+      "user": "user_180",
+      "data": "message content 180"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 445,
+    "message": {
+      "timestamp": "15-01-2024 10:30:45",
+      "user": "user_445",
+      "data": "message content 445"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 156,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_156",
+      "data": "message content 156"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 724,
+    "message": {
+      "timestamp": null,
+      "user": "user_724",
+      "data": "message content 724"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 470,
+    "message": {
+      "timestamp": "2024-02-30 10:30:45",
+      "user": "user_470",
+      "data": "message content 470"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 848,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 912,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 650,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_650",
+      "data": "message content 650"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 370,
+    "message": {
+      "user": "user_370",
+      "data": "message content 370"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 443,
+    "message": {
+      "timestamp": "2024-1-5 10:30:45",
+      "user": "user_443",
+      "data": "message content 443"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 108,
+    "message": {
+      "timestamp": "2024-11-05 12:00:00",
+      "user": "user_108",
+      "data": "message content 108"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 501,
+    "message": {
+      "timestamp": "2024-01-15 25:30:45",
+      "user": "user_501",
+      "data": "message content 501"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 842,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 430,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_430",
+      "data": "message content 430"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 869,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 12,
+    "message": {
+      "timestamp": "2024-01-15 10:30:45",
+      "user": "user_12",
+      "data": "message content 12"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 349,
+    "message": {
+      "user": "user_349",
+      "data": "message content 349"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 663,
+    "message": {
+      "timestamp": [
+        "2024-01-15",
+        "10:30:45"
+      ],
+      "user": "user_663",
+      "data": "message content 663"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 518,
+    "message": {
+      "timestamp": "2024/01/15 10:30:45",
+      "user": "user_518",
+      "data": "message content 518"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 70,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_70",
+      "data": "message content 70"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 379,
+    "message": {
+      "user": "user_379",
+      "data": "message content 379"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 677,
+    "message": {
+      "timestamp": 12345.67,
+      "user": "user_677",
+      "data": "message content 677"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 438,
+    "message": {
+      "timestamp": "not-a-datetime",
+      "user": "user_438",
+      "data": "message content 438"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 545,
+    "message": {
+      "timestamp": "2024-01-32 10:30:45",
+      "user": "user_545",
+      "data": "message content 545"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 355,
+    "message": {
+      "user": "user_355",
+      "data": "message content 355"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 42,
+    "message": {
+      "timestamp": "2024-09-20 17:45:12",
+      "user": "user_42",
+      "data": "message content 42"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 801,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 579,
+    "message": {
+      "timestamp": "10:30:45",
+      "user": "user_579",
+      "data": "message content 579"
+    },
+    "expected_valid": false,
+    "error_type": "invalid_format"
+  },
+  {
+    "id": 815,
+    "message": "not a dict",
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 123,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_123",
+      "data": "message content 123"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 824,
+    "message": 12.34,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 614,
+    "message": {
+      "timestamp": 123456,
+      "user": "user_614",
+      "data": "message content 614"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 700,
+    "message": {
+      "timestamp": false,
+      "user": "user_700",
+      "data": "message content 700"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 870,
+    "message": 123,
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 308,
+    "message": {
+      "user": "user_308",
+      "data": "message content 308"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 791,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_791",
+      "data": "message content 791"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 713,
+    "message": {
+      "timestamp": null,
+      "user": "user_713",
+      "data": "message content 713"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 104,
+    "message": {
+      "timestamp": "2024-08-18 19:45:30",
+      "user": "user_104",
+      "data": "message content 104"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 248,
+    "message": {
+      "user": "user_248",
+      "data": "message content 248"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 642,
+    "message": {
+      "timestamp": true,
+      "user": "user_642",
+      "data": "message content 642"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 850,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  },
+  {
+    "id": 707,
+    "message": {
+      "timestamp": true,
+      "user": "user_707",
+      "data": "message content 707"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 606,
+    "message": {
+      "timestamp": {
+        "date": "2024-01-15",
+        "time": "10:30:45"
+      },
+      "user": "user_606",
+      "data": "message content 606"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 77,
+    "message": {
+      "timestamp": "2024-07-04 16:20:55",
+      "user": "user_77",
+      "data": "message content 77"
+    },
+    "expected_valid": true
+  },
+  {
+    "id": 203,
+    "message": {
+      "user": "user_203",
+      "data": "message content 203"
+    },
+    "expected_valid": false,
+    "error_type": "missing_field"
+  },
+  {
+    "id": 732,
+    "message": {
+      "timestamp": true,
+      "user": "user_732",
+      "data": "message content 732"
+    },
+    "expected_valid": false,
+    "error_type": "type_error"
+  },
+  {
+    "id": 964,
+    "message": [
+      "list",
+      "of",
+      "items"
+    ],
+    "expected_valid": false,
+    "error_type": "malformed_message"
+  }
+]

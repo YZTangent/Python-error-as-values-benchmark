@@ -1,0 +1,227 @@
+{
+  "timestamp": "2025-11-05T03:16:11.306307",
+  "benchmarks": [
+    {
+      "name": "Exception Handling - Shallow Stack",
+      "total_time": 0.01407779095461592,
+      "success": 213,
+      "failures": 787,
+      "us_per_test": 14.07779095461592,
+      "function_stats": {
+        "validate_format_shallow_exc": {
+          "ncalls": 1000,
+          "tottime": 0.000399255,
+          "cumtime": 0.007867063,
+          "percall_tot": 3.99255e-07,
+          "percall_cum": 7.867063e-06
+        },
+        "parse_datetime_shallow_exc": {
+          "ncalls": 1000,
+          "tottime": 0.001546618,
+          "cumtime": 0.01061273,
+          "percall_tot": 1.546618e-06,
+          "percall_cum": 1.0612730000000001e-05
+        },
+        "parse_message_shallow_exc": {
+          "ncalls": 1000,
+          "tottime": 0.0017389410000000001,
+          "cumtime": 0.013419363,
+          "percall_tot": 1.738941e-06,
+          "percall_cum": 1.3419363e-05
+        }
+      }
+    },
+    {
+      "name": "Exception Handling - Deep Stack",
+      "total_time": 0.013265125046018511,
+      "success": 213,
+      "failures": 787,
+      "us_per_test": 13.265125046018511,
+      "function_stats": {
+        "validate_format_deep_exc": {
+          "ncalls": 1000,
+          "tottime": 0.000438633,
+          "cumtime": 0.003975664,
+          "percall_tot": 4.3863300000000003e-07,
+          "percall_cum": 3.975664000000001e-06
+        },
+        "parse_datetime_deep_exc": {
+          "ncalls": 1000,
+          "tottime": 0.0016077980000000001,
+          "cumtime": 0.006831771,
+          "percall_tot": 1.607798e-06,
+          "percall_cum": 6.831771e-06
+        },
+        "parse_message_deep_exc": {
+          "ncalls": 1000,
+          "tottime": 0.0009958710000000002,
+          "cumtime": 0.008353753,
+          "percall_tot": 9.958710000000001e-07,
+          "percall_cum": 8.353753000000001e-06
+        },
+        "validate_message_deep_exc": {
+          "ncalls": 1000,
+          "tottime": 0.00133189,
+          "cumtime": 0.010396867,
+          "percall_tot": 1.33189e-06,
+          "percall_cum": 1.0396867e-05
+        },
+        "process_batch_deep_exc": {
+          "ncalls": 1000,
+          "tottime": 0.001430141,
+          "cumtime": 0.012498921000000001,
+          "percall_tot": 1.430141e-06,
+          "percall_cum": 1.2498921e-05
+        }
+      }
+    },
+    {
+      "name": "Union Error (Result | Exception) - Shallow Stack",
+      "total_time": 0.010350583004765213,
+      "success": 213,
+      "failures": 787,
+      "us_per_test": 10.350583004765213,
+      "function_stats": {
+        "validate_format_shallow_union": {
+          "ncalls": 1000,
+          "tottime": 0.00040189900000000005,
+          "cumtime": 0.0037044570000000004,
+          "percall_tot": 4.0189900000000004e-07,
+          "percall_cum": 3.7044570000000006e-06
+        },
+        "parse_datetime_shallow_union": {
+          "ncalls": 1000,
+          "tottime": 0.001685819,
+          "cumtime": 0.006671170000000001,
+          "percall_tot": 1.6858190000000001e-06,
+          "percall_cum": 6.67117e-06
+        },
+        "parse_message_shallow_union": {
+          "ncalls": 1000,
+          "tottime": 0.0018190530000000002,
+          "cumtime": 0.009635550000000001,
+          "percall_tot": 1.8190530000000003e-06,
+          "percall_cum": 9.635550000000001e-06
+        }
+      }
+    },
+    {
+      "name": "Union Error (Result | Exception) - Deep Stack",
+      "total_time": 0.013037208002060652,
+      "success": 213,
+      "failures": 787,
+      "us_per_test": 13.037208002060652,
+      "function_stats": {
+        "validate_format_deep_union": {
+          "ncalls": 1000,
+          "tottime": 0.00039724000000000004,
+          "cumtime": 0.003689458,
+          "percall_tot": 3.9724000000000003e-07,
+          "percall_cum": 3.689458e-06
+        },
+        "parse_datetime_deep_union": {
+          "ncalls": 1000,
+          "tottime": 0.0016128140000000002,
+          "cumtime": 0.006535814,
+          "percall_tot": 1.6128140000000002e-06,
+          "percall_cum": 6.535814e-06
+        },
+        "parse_message_deep_union": {
+          "ncalls": 1000,
+          "tottime": 0.001058687,
+          "cumtime": 0.008181273000000001,
+          "percall_tot": 1.058687e-06,
+          "percall_cum": 8.181273e-06
+        },
+        "validate_message_deep_union": {
+          "ncalls": 1000,
+          "tottime": 0.001323904,
+          "cumtime": 0.010254294,
+          "percall_tot": 1.323904e-06,
+          "percall_cum": 1.0254294000000001e-05
+        },
+        "process_batch_deep_union": {
+          "ncalls": 1000,
+          "tottime": 0.0014335,
+          "cumtime": 0.012401601,
+          "percall_tot": 1.4335000000000001e-06,
+          "percall_cum": 1.2401601e-05
+        }
+      }
+    },
+    {
+      "name": "Tuple Error (Result, Error) - Shallow Stack",
+      "total_time": 0.009780333959497511,
+      "success": 213,
+      "failures": 787,
+      "us_per_test": 9.780333959497511,
+      "function_stats": {
+        "validate_format_shallow_tuple": {
+          "ncalls": 1000,
+          "tottime": 0.000446696,
+          "cumtime": 0.003729146,
+          "percall_tot": 4.46696e-07,
+          "percall_cum": 3.729146e-06
+        },
+        "parse_datetime_shallow_tuple": {
+          "ncalls": 1000,
+          "tottime": 0.0015392980000000001,
+          "cumtime": 0.0064587870000000006,
+          "percall_tot": 1.5392980000000002e-06,
+          "percall_cum": 6.458787e-06
+        },
+        "parse_message_shallow_tuple": {
+          "ncalls": 1000,
+          "tottime": 0.0017291000000000001,
+          "cumtime": 0.009267506,
+          "percall_tot": 1.7291e-06,
+          "percall_cum": 9.267506e-06
+        }
+      }
+    },
+    {
+      "name": "Tuple Error (Result, Error) - Deep Stack",
+      "total_time": 0.012408792041242123,
+      "success": 213,
+      "failures": 787,
+      "us_per_test": 12.408792041242123,
+      "function_stats": {
+        "validate_format_deep_tuple": {
+          "ncalls": 1000,
+          "tottime": 0.00041655100000000003,
+          "cumtime": 0.0037893280000000002,
+          "percall_tot": 4.1655100000000004e-07,
+          "percall_cum": 3.7893280000000002e-06
+        },
+        "parse_datetime_deep_tuple": {
+          "ncalls": 1000,
+          "tottime": 0.001523037,
+          "cumtime": 0.006500889,
+          "percall_tot": 1.523037e-06,
+          "percall_cum": 6.500889e-06
+        },
+        "parse_message_deep_tuple": {
+          "ncalls": 1000,
+          "tottime": 0.000983105,
+          "cumtime": 0.007981602,
+          "percall_tot": 9.831049999999999e-07,
+          "percall_cum": 7.981602e-06
+        },
+        "validate_message_deep_tuple": {
+          "ncalls": 1000,
+          "tottime": 0.001241094,
+          "cumtime": 0.009912593,
+          "percall_tot": 1.2410940000000001e-06,
+          "percall_cum": 9.912593000000001e-06
+        },
+        "process_batch_deep_tuple": {
+          "ncalls": 1000,
+          "tottime": 0.0013571450000000001,
+          "cumtime": 0.011923948,
+          "percall_tot": 1.357145e-06,
+          "percall_cum": 1.1923948e-05
+        }
+      }
+    }
+  ]
+}

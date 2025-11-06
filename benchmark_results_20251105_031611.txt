@@ -1,0 +1,118 @@
+Benchmark Results - 2025-11-05 03:16:11
+====================================================================================================
+
+====================================================================================================
+BENCHMARK: Exception Handling - Shallow Stack
+====================================================================================================
+
+Total Time: 0.014078 seconds
+Success: 213
+Failures: 787
+Average time per test case: 14.08 µs
+
+Function-level breakdown:
+Function                                      Calls      TotTime      PerCall      CumTime
+------------------------------------------------------------------------------------------
+validate_format_shallow_exc                    1000     0.000399  0.000000399     0.007867
+parse_datetime_shallow_exc                     1000     0.001547  0.000001547     0.010613
+parse_message_shallow_exc                      1000     0.001739  0.000001739     0.013419
+
+====================================================================================================
+BENCHMARK: Exception Handling - Deep Stack
+====================================================================================================
+
+Total Time: 0.013265 seconds
+Success: 213
+Failures: 787
+Average time per test case: 13.27 µs
+
+Function-level breakdown:
+Function                                      Calls      TotTime      PerCall      CumTime
+------------------------------------------------------------------------------------------
+validate_format_deep_exc                       1000     0.000439  0.000000439     0.003976
+parse_datetime_deep_exc                        1000     0.001608  0.000001608     0.006832
+parse_message_deep_exc                         1000     0.000996  0.000000996     0.008354
+validate_message_deep_exc                      1000     0.001332  0.000001332     0.010397
+process_batch_deep_exc                         1000     0.001430  0.000001430     0.012499
+
+====================================================================================================
+BENCHMARK: Union Error (Result | Exception) - Shallow Stack
+====================================================================================================
+
+Total Time: 0.010351 seconds
+Success: 213
+Failures: 787
+Average time per test case: 10.35 µs
+
+Function-level breakdown:
+Function                                      Calls      TotTime      PerCall      CumTime
+------------------------------------------------------------------------------------------
+validate_format_shallow_union                  1000     0.000402  0.000000402     0.003704
+parse_datetime_shallow_union                   1000     0.001686  0.000001686     0.006671
+parse_message_shallow_union                    1000     0.001819  0.000001819     0.009636
+
+====================================================================================================
+BENCHMARK: Union Error (Result | Exception) - Deep Stack
+====================================================================================================
+
+Total Time: 0.013037 seconds
+Success: 213
+Failures: 787
+Average time per test case: 13.04 µs
+
+Function-level breakdown:
+Function                                      Calls      TotTime      PerCall      CumTime
+------------------------------------------------------------------------------------------
+validate_format_deep_union                     1000     0.000397  0.000000397     0.003689
+parse_datetime_deep_union                      1000     0.001613  0.000001613     0.006536
+parse_message_deep_union                       1000     0.001059  0.000001059     0.008181
+validate_message_deep_union                    1000     0.001324  0.000001324     0.010254
+process_batch_deep_union                       1000     0.001434  0.000001434     0.012402
+
+====================================================================================================
+BENCHMARK: Tuple Error (Result, Error) - Shallow Stack
+====================================================================================================
+
+Total Time: 0.009780 seconds
+Success: 213
+Failures: 787
+Average time per test case: 9.78 µs
+
+Function-level breakdown:
+Function                                      Calls      TotTime      PerCall      CumTime
+------------------------------------------------------------------------------------------
+validate_format_shallow_tuple                  1000     0.000447  0.000000447     0.003729
+parse_datetime_shallow_tuple                   1000     0.001539  0.000001539     0.006459
+parse_message_shallow_tuple                    1000     0.001729  0.000001729     0.009268
+
+====================================================================================================
+BENCHMARK: Tuple Error (Result, Error) - Deep Stack
+====================================================================================================
+
+Total Time: 0.012409 seconds
+Success: 213
+Failures: 787
+Average time per test case: 12.41 µs
+
+Function-level breakdown:
+Function                                      Calls      TotTime      PerCall      CumTime
+------------------------------------------------------------------------------------------
+validate_format_deep_tuple                     1000     0.000417  0.000000417     0.003789
+parse_datetime_deep_tuple                      1000     0.001523  0.000001523     0.006501
+parse_message_deep_tuple                       1000     0.000983  0.000000983     0.007982
+validate_message_deep_tuple                    1000     0.001241  0.000001241     0.009913
+process_batch_deep_tuple                       1000     0.001357  0.000001357     0.011924
+
+====================================================================================================
+PERFORMANCE COMPARISON
+====================================================================================================
+
+Implementation                                          Stack      Total Time      µs/test    Speedup
+----------------------------------------------------------------------------------------------------
+Exception Handling                                    Shallow        0.014078s       14.08      1.00x
+Exception Handling                                       Deep        0.013265s       13.27      1.00x
+Union (Result | Exception)                            Shallow        0.010351s       10.35      1.36x
+Union (Result | Exception)                               Deep        0.013037s       13.04      1.02x
+Tuple (Result, Error)                                 Shallow        0.009780s        9.78      1.44x
+Tuple (Result, Error)                                    Deep        0.012409s       12.41      1.07x
+
